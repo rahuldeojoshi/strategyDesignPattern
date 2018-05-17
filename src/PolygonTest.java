@@ -1,6 +1,3 @@
-/**
- * 
- */
 package src;
 
 import static org.junit.Assert.*;
@@ -15,7 +12,6 @@ import strategyDesign.*;
 
 /**
  * @author RDJ
- *
  */
 public class PolygonTest {
 
@@ -156,21 +152,21 @@ public class PolygonTest {
 		assertThat(actualArea, is(expectedArea));
 		
 		// Create a AreaCalculator object
-				AreaCalculator calcRect = new RectangleAreaCalc();
+        AreaCalculator calcRect = new RectangleAreaCalc();
 				
 				
-				// adding a point intentionally to violate the condition in RectangleAreaCalc.getArea()
-				p.addPoint(new Point(9,4));
+       // adding a point intentionally to violate the condition in RectangleAreaCalc.getArea()
+       p.addPoint(new Point(9,4));
 				
-				// Create a Polygon object by passing the above two params
-				p.setCalc(calcRect);
+       // Create a Polygon object by passing the above two params
+       p.setCalc(calcRect);
 				
-				// Area return should be 0
-				float actualAreaRect = p.getArea();
-				float expectedAreaRect = calcRect.getArea(points);
+       // Area return should be 0
+       float actualAreaRect = p.getArea();
+       float expectedAreaRect = calcRect.getArea(points);
 				
-				// Test
-				assertThat(actualAreaRect, is(expectedAreaRect));
+       // Test
+       assertThat(actualAreaRect, is(expectedAreaRect));
 	}
 
 }
