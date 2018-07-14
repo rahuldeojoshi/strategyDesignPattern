@@ -11,7 +11,8 @@ import org.junit.Test;
 import strategyDesign.*;
 
 /**
- * @author RDJ
+ * Copyright
+ * @author RDJ 
  */
 public class PolygonTest {
 
