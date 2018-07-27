@@ -1,6 +1,4 @@
-/**
- * 
- */
+// AreaCalulator design.
 package strategyDesign;
 
 import java.util.ArrayList;
